@@ -2,8 +2,7 @@
   position: relative;
   border-bottom: 1px solid var(--border-color);
 }
-
-.header-bar {
+.header__bar {
   height: 60px;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -22,8 +21,8 @@
   }
 }
 
-.header-bar,
-.nav-bar__list {
+.header__bar,
+.nav__list {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -37,15 +36,14 @@
   }
 }
 
-.nav-bar__item {
+.nav__item {
   position: relative;
 
   &:not(:last-child) {
     margin-right: 50px;
   }
 }
-
-.nav-bar__link {
+.nav__link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -63,7 +61,7 @@
   }
 }
 
-.nav-bar__link--active {
+.nav__link--active {
   color: var(--link-selection-solor);
 
   @media screen and (min-width: 768px) {
